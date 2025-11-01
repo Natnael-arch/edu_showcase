@@ -15,7 +15,7 @@ function CompanyDashboard() {
 
   const handleDeletePool = (poolId: string) => {
     if (confirm('Are you sure you want to close this pool and remove the quest?')) {
-      toast.success('Pool closed and quest removed (Demo Mode)');
+      toast.success(`Pool ${poolId} closed and quest removed (Demo Mode)`);
     }
   };
 
