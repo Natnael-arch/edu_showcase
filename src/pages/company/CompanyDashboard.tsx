@@ -25,6 +25,20 @@ function CompanyDashboard() {
 
   return (
     <div className="max-w-7xl mx-auto">
+      {/* Demo Notice Banner */}
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+        <div className="flex items-center">
+          <div className="flex-shrink-0">
+            <span className="text-yellow-400 text-xl">⚠️</span>
+          </div>
+          <div className="ml-3">
+            <p className="text-sm text-yellow-700">
+              <strong>Demo Mode:</strong> This is a mock showcase of the EduFund platform. All data is simulated and no real transactions occur.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="bg-white rounded-lg shadow p-6 mb-8">
         <div className="flex justify-between items-start">
