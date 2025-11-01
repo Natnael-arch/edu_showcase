@@ -14,9 +14,11 @@ function CompanyDashboard() {
   };
 
   const handleDeletePool = (poolId: string) => {
-    if (confirm('Are you sure you want to close this pool and remove the quest?')) {
-      toast.success(`Pool ${poolId} closed and quest removed (Demo Mode)`);
+    if (!confirm('Are you sure you want to close this pool and remove the quest?')) {
+      return;
     }
+    // Use poolId in success message
+    toast.success(`Pool ${poolId} closed and quest removed (Demo Mode)`);
   };
 
   const totalFunded = mockPools.reduce((sum, p) => sum + p.totalFund, 0);
